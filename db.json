@@ -1,0 +1,141 @@
+{
+  "origenes": {
+    "title": "Orígenes de Resconorio",
+    "intro": "Descubre el nacimiento y los primeros asentamientos que darían origen a nuestro querido pueblo montañés.",
+    "blocks": [
+      {
+        "title": "Los Primeros Asentamientos",
+        "content": "Los orígenes de Resconorio se remontan al siglo X, cuando grupos de pastores y cazadores-recolectores se establecieron en los valles protegidos de nuestras montañas, atraídos por la abundante fauna y la calidad de los pastizales de altura.\n\nEstos primeros habitantes dejaron testimonios de su presencia en forma de herramientas de piedra pulida y restos de hogueras encontrados en diversos yacimientos arqueológicos distribuidos por el término municipal."
+      },
+      {
+        "title": "La Fundación Oficial",
+        "content": "Resconorio obtuvo su estatus de villa reconocida oficialmente en el año 1127, según los documentos encontrados en el archivo diocesano de la cercana catedral. El acto de fundación conmemoraba la concesión de unos privilegios especiales por parte del rey Alfonso VII a los colonos que decidieron establecerse permanentemente en nuestras tierras.\n\nEl nombre \"Resconorio\" proviene de la voz prerromana \"Reskonor\" que significa \"lugar de reunión\" o \"punto de encuentro\", haciendo referencia a su posición estratégica como cruce de rutas de trashumancia entre los valles norte y sur de la cordillera."
+      },
+      {
+        "title": "Época Medieval",
+        "content": "Durante la Edad Media, Resconorio prosperó gracias a su posición estratégica en el Camino de la Lana, ruta comercial que conectaba los puertos del norte con los territorios interiores. El ganado lanar y los productos artesanales de lana y cuero fueron la base de su economía durante varios siglos.\n\nDel periodo medieval datan varias construcciones que aún podemos admirar, como la iglesia parroquial de San Miguel (siglo XIII) y los restos de las antiguas murallas que protegían el casco histórico."
+      }
+    ]
+  },
+  "historia": {
+    "title": "Historia de Resconorio",
+    "intro": "Un recorrido por los acontecimientos más significativos que han forjado la identidad de nuestro pueblo a lo largo de los siglos.",
+    "timeline": [
+      {
+        "period": "Época Romana y Visigoda (siglos I-VII)",
+        "content": "Aunque no hubo asentamientos romanos importantes en nuestro territoire, se han encontrado restos de caminos y señalización que indican el paso de tropas y comerciantes por los puertos de montaña. Durante la época visigoda, la zona fue utilizada principalmente como territorio de paso y pastoreo de ganado."
+      },
+      {
+        "period": "Reconquista y Edad Media (siglos VIII-XIII)",
+        "content": "Después de la conquista cristiana, Resconorio se integró en el Reino de León. Durante este periodo se construyeron las primeras fortificaciones y se estableció el sistema feudal que organizaría las tierras alrededor del pueblo. El siglo XII vio el otorgamiento del Fuero de Resconorio, documento que establecía los derechos y deberes de los habitantes."
+      },
+      {
+        "period": "Época Moderna (siglos XIV-XVIII)",
+        "content": "Los siglos XV y XVI fueron de relativo prosperidad gracias al desarrollo de la lana merina y el comercio con ciudades como Burgos y Valladolid. El siglo XVI vio la construcción de varios edificios civiles y religiosos de importancia, incluyendo el antiguo ayuntamiento (actual casa de la cultura) y la expansión de la iglesia parroquial.\n\nDurante la Guerra de Sucesión española (1701-1714), Resconorio apoyó al candidato borbónico, lo que le trajo ciertos beneficios administrativos posteriores pero también requirió importantes contribuciones económicas y humanas."
+      },
+      {
+        "period": "Época Contemporánea (siglos XIX-XX)",
+        "content": "El siglo XIX trajo consigo las guerras carlistas, que afectaron ligeramente a nuestra zona por su ubicación fronteriza. La desamortización de Mendizábal afectó a los terrenos eclesiásticos, aunque gran parte fue adquirida por particulares locales que continuaron su explotación agricola y ganadera.\n\nEl siglo XX vio la llegada de la electricidad en los años 20, la guerra civil española (1936-1939) y el consiguiente periodo de posguerra. Las décadas de 1960 y 70 trajeron el primer éxodo rural significativo, revirtiéndose parcialmente en los últimos años gracias al turismo de calidad y el teletrabajo."
+      }
+    ]
+  },
+  "lugares": {
+    "title": "Lugares Relevantes de Resconorio",
+    "intro": "Descubre los sitios más emblemáticos, naturales e históricos que hacen únicos a nuestros paisajes y patrimonio.",
+    "lugares": [
+      {
+        "icon": "⛰️",
+        "titulo": "Pico Fuentes Carrionas",
+        "descripcion": "El pico más alto del municipio con sus 2.539 metros de altitud, ofrece vistas panorámicas de los Picos de Europa y es punto de partida para numerosas rutas de senderismo de difficulty media-alta."
+      },
+      {
+        "icon": "🌲",
+        "titulo": "Hayedo de Monte Cildoz",
+        "descripcion": "Un impresionante bosque de hayas centenarias declarado reserva natural, con árboles de más de 300 años de edad que crean un hábitat único para especies protegidas como el urogallo cantábrico."
+      },
+      {
+        "icon": "💧",
+        "titulo": "Cascada del Río Pisuerga Alto",
+        "descripcion": "Espectacular salto de agua de 40 metros de altura en el nacimiento del río Pisuerga, accesible mediante una senda bien señalizada que atraviesa bosques de robles y melojos."
+      },
+      {
+        "icon": "⛪",
+        "titulo": "Iglesia Parroquial de San Miguel",
+        "descripcion": "Templo románico del siglo XII con posteriores modificaciones góticas, destaca su portada escultórica y el campanario de ladrillo visto que constituye uno de los símbolos del casco histórico."
+      },
+      {
+        "icon": "🏰",
+        "titulo": "Ruinas del Castillo de Peña Santa",
+        "descripcion": "Restos de una fortaleza medieval del siglo IX situada en un peñasco estratégico que dominaba los valles circundantes, utilizada posteriormente como refugio durante conflictos fronterizos."
+      },
+      {
+        "icon": "🌸",
+        "titulo": "Prado de las Vista Alegre",
+        "descripcion": "Extenso prado de montaña conocido por sus espectaculares floraciones primaverales de gentianas, orchideas y otras especies alpinas, además de ser zona de pastoreo tradicional desde tiempos inmemoriales."
+      }
+    ]
+  },
+  "personajes": {
+    "title": "Personajes Ilustres de Resconorio",
+    "intro": "Conoce a las mujeres y hombres que han dejado huella en Resconorio a través de sus acciones, creaciones o liderazgo.",
+    "personas": [
+      {
+        "nombre": "Elvira González de la Fuente (1842-1910)",
+        "descripcion": "Pionera de la educación femenina en la zona, fundó la primera escuela para niñas en Resconorio en 1872 y luchó por el acceso de las mujeres a la instrucción formal durante décadas."
+      },
+      {
+        "nombre": "Fernando Montoya (1901-1978)",
+        "descripcion": "Reconocido escultor cuyas obras en madera y piedra adornan espacios públicos de Resconorio y pueblos vecinos. Su estilo se caracteriza por la integración de formas naturales con motivos tradicionales monteses."
+      },
+      {
+        "nombre": "Dr. Antonia Sánchez Valverde (1925-2003)",
+        "descripcion": "Médica y investigadora que realizado importantes avances en el tratamiento de enfermedades reumáticas típicas de climas de montaña. Dirigió el centro de salud de Resconorio durante más de treinta años."
+      },
+      {
+        "nombre": "José Luis Fernández (1948-2015)",
+        "descripcion": "Escritor y poeta cuyas obras capturan la esencia de la vida rural de montaña. Autor de \"Canciones del Hautecia\" y \"Ecos de Piedra\", recibió múltiples premios nacionales de literatura."
+      }
+    ]
+  },
+  "avisos": [
+    {
+      "titulo": "Nuevo Plan de Gestión Forestal Sostenible",
+      "contenido": "El Ayuntamiento ha aprobado un plan integral para la gestión responsable de nuestros bosques, que incluye reforestación con especies nativas, programas de educación ambiental y monitoreo continuo de la biodiversidad.",
+      "fecha": "2026-05-20"
+    },
+    {
+      "titulo": "Festival de Cultura Montañesa 2026",
+      "contenido": "Del 24 al 26 de junio celebraremos nuestro Festival Anual de Cultura Montañesa con música tradicional, danzas típicas y demostraciones de oficios artesanales.",
+      "fecha": "2026-05-18"
+    },
+    {
+      "titulo": "Mejora de Accesibilidad en Senderos Populares",
+      "contenido": "Se han completado las obras de mejora en tres senderos populares, incluyendo pasarelas sostenibles, señalética táctil y áreas de descanso con madera recuperada de la zona.",
+      "fecha": "2026-05-15"
+    }
+  ],
+  "eventos": [
+    {
+      "titulo": "Fiestas de San Juan",
+      "descripcion": "Hogueras tradicionales, música de rondalla y verbenas populares en la plaza mayor, con protocolos de seguridad ambiental.",
+      "fechaInicio": "2026-06-23",
+      "fechaFin": "2026-06-24"
+    },
+    {
+      "titulo": "Feria Medieval de Artesanía",
+      "descripcion": "Artesanía tradicional, gastronomía de montaña y demostraciones de oficios antiguos en el entorno histórico.",
+      "fechaInicio": "2026-07-15"
+    },
+    {
+      "titulo": "Festival de Música Alpina",
+      "descripcion": "Conciertos de instrumentos tradicionales de montaña en espacios naturales únicos del municipio.",
+      "fechaInicio": "2026-08-02"
+    },
+    {
+      "titulo": "Travesía de Refugios de Alta Montaña",
+      "descripcion": "Ruta de dos días por refugios de alta montaña con pernoctación guiada y avistamiento de fauna de montaña.",
+      "fechaInicio": "2026-09-19",
+      "fechaFin": "2026-09-20"
+    }
+  ]
+}

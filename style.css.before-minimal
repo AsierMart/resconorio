@@ -1,0 +1,546 @@
+:root {
+    /* Alpine-Inspired Color Palette */
+    --alpinerose: #c41e3a;        /* Alpenglow / mountain rose at sunset */
+    --mountaingray: #5d4037;      /* Rich stone/rock brown */
+    --forestdeep: #2e7d32;        /* Deep forest green */
+    --skypale: #e3f2fd;           /* Pale mountain sky */
+    --skydark: #1565c0;           /* Deep alpine sky */
+    --snowwhite: #fafafa;         /* Fresh snow */
+    --stonelight: #cfd8dc;        /* Weathered stone */
+    --stone dark: #37474f;        /* Dark mountain stone */
+    --woodwarm: #8d6e63;          /* Warm timber */
+    --metalcool: #607d8b;         /* Cool mountain metal/rock */
+
+    /* Neutrals with mountain character */
+    --white: #ffffff;
+    --black: #000000;
+    --gray-50: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-200: #eeeeee;
+    --gray-300: #e0e0e0;
+    --gray-400: #bdbdbd;
+    --gray-500: #9e9e9e;
+    --gray-600: #757575;
+    --gray-700: #616161;
+    --gray-800: #424242;
+    --gray-900: #212121;
+
+    /* Shadows with depth */
+    --shadow-alpine: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-mountain: 0 8px 24px rgba(0,0,0,0.12);
+    --shadow-peak: 0 16px 40px rgba(0,0,0,0.16);
+    --shadow-canyon: 0 24px 48px rgba(0,0,0,0.2);
+
+    /* Border radius - organic, not too perfect */
+    --radius-alpine: 0.75rem;
+    --radius-soft: 1.25rem;
+    --radius-none: 0;
+
+    /* Typography: Alpine Contemporary */
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+    /* For headings - elegant, timeless, with mountain gravitas */
+    --font-mono: 'IBM Pager Mono', 'Courier New', monospace;
+    /* For details - technical, precise, like trail markers */
+    --font-body: 'IBM Pager Mono', 'Courier New', monospace;
+    /* For body - highly readable, neutral */
+
+    /* Transition: Smooth like mountain streams */
+    --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-quick: 0.2s ease;
+
+    /* Max width: Like a mountain valley - wide but contained */
+    --max-width: 1400px;
+    --content-width: 1200px;
+}
+
+/* Global Reset with Mountain Sensitivity */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-width;
+}
+
+/* Fix for the box-sizing syntax error above */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px; /* Slightly larger base for mountain readability */
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.8;
+    color: var(--gray-800);
+    background-color: var(--snowwhite);
+    overflow-x: hidden;
+    /* Subtle texture like mountain air */
+    background-image:
+        radial-gradient(circle at 100% 200%, rgba(112,128,144,0.03) 1px, transparent 1px),
+        radial-gradient(circle at 0% 100%, rgba(112,128,144,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Headings with stone-carved character */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--mountaingray);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.8rem; }
+h3 { font-size: 2.2rem; }
+h4 { font-size: 1.8rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1.75rem;
+    color: var(--gray-700);
+    font-size: 1.1rem;
+}
+
+/* Links with trail marker precision */
+a {
+    color: var(--mountaingray);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: var(--transition-smooth);
+    font-family: var(--font-mono);
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--alpinerose);
+    border-bottom-color: var(--alpinerose);
+    text-decoration: none;
+}
+
+/* Page container with mountain frame */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header with Alpine Peak Motif */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.9) 70%, var(--snowwhite) 100%);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-alpine);
+}
+
+.header-alpine-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.peak-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 60px;
+    background:
+        linear-gradient(to top,
+            transparent 0%,
+            rgba(0,0,0,0.04) 30%,
+            rgba(0,0,0,0.08) 60%,
+            rgba(0,0,0,0.12) 100%);
+    border-radius: 50% 50% 0 0 / 60% 60% 0 0;
+    transform: translateY(10px);
+    z-index: 1;
+}
+
+.alpine-glow {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    background:
+        linear-gradient(135deg,
+            transparent 0%,
+            rgba(196,30,58,0.03) 30%,
+            transparent 70%);
+    animation: alpenglow 8s ease-in-out infinite;
+}
+
+@keyframes alpenglow {
+    0%, 100% { transform: translate(0,0); }
+    50% { transform: translate(10px,-10px) rotate(2deg); }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.logo-alpine {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.logo-alpine h1 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--mountaingray);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.logo-alpine h2 {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.main-nav li a {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    color: var(--gray-600);
+    padding: 0.5rem 0;
+    position: relative;
+    transition: var(--transition-quick);
+}
+
+.main-nav li a:hover,
+.main-nav li a.active {
+    color: var(--mountaingray);
+}
+
+.main-nav li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--alpinerose);
+    border-radius: 1px;
+}
+
+/* Hero: Immersive Alpine Experience */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    min-height: 700px;
+    overflow: hidden;
+    background-color: var(--skypale);
+}
+
+.hero-alpine-layers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sky-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--skypale) 0%, var(--skydark) 100%);
+    z-index: 1;
+}
+
+.distant-peaks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background:
+        linear-gradient(to top,
+            var(--mountaingray) 0%,
+            var(--mountaingray) 20%,
+            transparent 20%,
+            transparent 40%,
+            var(--mountaingray) 40%,
+            var(--mountaingray) 60%,
+            transparent 60%,
+            transparent 80%,
+            var(--mountaingray) 80%,
+            var(--mountaingray) 100%);
+    background-size: 200% 100%;
+    animation: driftPeaks 25s linear infinite;
+    z-index: 2;
+}
+
+@keyframes driftPeaks {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -50%; }
+}
+
+.mid-peaks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background:
+        linear-gradient(to top,
+            var(--stone dark) 0%,
+            var(--stone dark) 15%,
+            transparent 15%,
+            transparent 35%,
+            var(--stone dark) 35%,
+            var(--stone dark) 55%,
+            transparent 55%,
+            transparent 75%,
+            var(--stone dark) 75%,
+            var(--stone dark) 100%);
+    background-size: 150% 100%;
+    animation: driftPeaks 20s linear infinite;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+.foreground-pines {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 18%;
+    background:
+        repeating-linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 8%,
+            var(--forestdeep) 8%,
+            var(--forestdeep) 10%
+        );
+    background-size: 200% 100%;
+    animation: swayPines 15s linear infinite;
+    z-index: 4;
+    opacity: 0.9;
+}
+
+@keyframes swayPines {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -50%; }
+}
+
+.alpenglow {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at center, var(--alpinerose) 0%, transparent 70%);
+    filter: blur(30px);
+    animation: pulseGlow 6s ease-in-out infinite;
+    z-index: 5;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+.atmospheric-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 1px, transparent 1px),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05) 1px, transparent 1px),
+        radial-gradient(circle at 40% 20%, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 200px 200px;
+    animation: floatParticles 20s linear infinite;
+    z-index: 6;
+    pointer-events: none;
+}
+
+@keyframes floatParticles {
+    0% { background-position: 0 0; }
+    100% { background-position: -200px -200px; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--snowwhite);
+}
+
+.hero-title {
+    font-family: var(--font-serif);
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.hero-tagline {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    color: var(--stonelight);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    padding: 0.9rem 2.25rem;
+    border-radius: var(--radius-alpine);
+    transition: var(--transition-smooth);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: var(--alpinerose);
+    color: var(--snowwhite);
+    box-shadow: var(--shadow-alpine);
+}
+
+.btn-primary:hover {
+    background-color: var(--stone dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-mountain);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--snowwhite);
+    border: 2px solid var(--snowwhite);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+}
+
+.hero-meta {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--stonelight);
+    margin-top: 2rem;
+}
+
+/* Introduction: Text & Image Mountain Balance */
+.intro-section {
+    background-color: var(--white);
+    padding: 6rem 0;
+    border-top: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.container {
+    width: 90%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.intro-alpine-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.intro-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text-block h2 {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--mountaingray);
+    position: relative;
+    display: inline-block;
+}
+
+.intro-text-block h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--alpinerose);
+    border-radius: 2px;
+}
+
+.intro-paragraph {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--gray-700);
+    margin-bottom: 1.75rem;
+}
+
+.intro-image-block {
+    position: relative;
+    height: 500px;
+    display: flex;

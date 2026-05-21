@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuntamiento de Resconorio</title>
+    <!-- Minimalist Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Pager+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Container -->
+    <div class="page-container">
+
+        <!-- Header: Minimalist -->
+        <header class="site-header">
+            <div class="container header-content">
+                <div class="logo-minimal">
+                    <h1>Ayuntamiento</h1>
+                    <h2>de Resconorio</h2>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                        <li><a href="#noticias" class="nav-link">Bandos y Avisos</a></li>
+                        <li><a href="#calendario" class="nav-link">Calendario</a></li>
+                        <li><a href="#galeria" class="nav-link">Galería</a></li>
+                        <li><a href="admin.html" class="nav-link">Administración</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero: Minimalist with Subtle Background -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-subtle-pattern"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Resconorio</h1>
+                <p class="hero-subtitle">850 m.s.n.m. • Pueblo de montaña en el norte de España</p>
+                <div class="hero-actions">
+                    <a href="#noticias" class="btn-primary">Últimos Avisos</a>
+                    <a href="#galeria" class="btn-secondary">Ver Galería</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction: Clean & Spacious -->
+        <section class="intro-section">
+            <div class="container">
+                <h2 class="section-title">Nuestro Pueblo</h2>
+                <p class="intro-text">
+                    Resconorio es un municipio de montaña que combina tradición y progreso.
+                    Situado a 850 metros sobre el nivel del mar, nuestro pueblo ofrece
+                    una calidad de vida excepcional entre valles verdes y picos majestuosos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Statistics: Minimalist Cards -->
+        <section class="stats-section">
+            <div class="container">
+                <h2 class="section-title">Datos Relevantes</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-label">Población</h3>
+                        <p class="stat-value">1,245 habitantes</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-label">Altitud Media</h3>
+                        <p class="stat-value">850 m.s.n.m.</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-label">Superficie Forestal</h3>
+                        <p class="stat-value">3,200 hectáreas</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-label">Senderos Señalizados</h3>
+                        <p class="stat-value">85 km</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News: Minimalist Timeline -->
+        <section id="noticias" class="section">
+            <div class="container">
+                <h2 class="section-title">Información Municipal</h2>
+                <div class="news-timeline">
+                    <div class="timeline-line"></div>
+
+                    <!-- News Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <time datetime="2026-05-20" class="news-date">20 May</time>
+                            <h3 class="news-title">Nuevo Plan de Gestión Forestal Sostenible</h3>
+                            <p class="news-text">
+                                El Ayuntamiento ha aprobado un plan integral para la gestión
+                                responsable de nuestros bosques, que incluye reforestación con
+                                especies nativas, programas de educación ambiental y monitoreo
+                                continuo de la biodiversidad.
+                            </p>
+                            <a href="#" class="news-link">Leer más →</a>
+                        </div>
+                    </div>
+
+                    <!-- More news items would go here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Events: Clean Cards -->
+        <section id="calendario" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Próximos Eventos</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <h3 class="event-title">Fiestas de San Juan</h3>
+                        <p class="event-date">23-24 junio 2026</p>
+                        <p class="event-text">
+                            Celebración tradicional con verbenas, música popular y actividades
+                            para todos los públicos en la plaza municipal.
+                        </p>
+                        <a href="#" class="event-link">Ver programa →</a>
+                    </div>
+
+                    <div class="event-card">
+                        <h3 class="event-title">Mercado Medieval Artesanal</h3>
+                        <p class="event-date">15 julio 2026</p>
+                        <p class="event-text">
+                            Artesanía tradicional, gastronomía de montaña y demostraciones
+                            de oficios antiguos en el entorno histórico.
+                        </p>
+                        <a href="#" class="event-link">Ver programa →</a>
+                    </div>
+
+                    <div class="event-card">
+                        <h3 class="event-title">Festival de Música Alpina</h3>
+                        <p class="event-date">2 agosto 2026</p>
+                        <p class="event-text">
+                            Conciertos de instrumentos tradicionales de montaña en
+                            espacios naturales privilegiados del municipio.
+                        </p>
+                        <a href="#" class="event-link">Ver programa →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery: Minimalist Grid -->
+        <section id="galeria" class="section">
+            <div class="container">
+                <h2 class="section-title">Galería Fotográfica</h2>
+                <div class="gallery-grid">
+                    <!-- Images from Unsplash (temporary - replace with actual photos) -->
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/random/500x400/?mountain,village"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/500x400/6B7280/FFFFFF?text=Paisaje+Monta%C3%B1eo'; this.alt='Paisaje montañoso de Resconorio';"
+                             alt="Paisaje montañoso de Resconorio">
+                        <figcaption>
+                            <p>Vista panorámica del entorno natural</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/random/500x400/?architecture,stone"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/500x400/6B7280/FFFFFF?text=Arquitectura+Tradicional'; this.alt='Arquitectura tradicional de Resconorio';"
+                             alt="Arquitectura tradicional de Resconorio">
+                        <figcaption>
+                            <p>Casco urbano con encanto montañés</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/random/500x400/?river,nature"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/500x400/6B7280/FFFFFF?text=R%C3%ADo+y+Naturaleza'; this.alt='Río y naturaleza de Resconorio';"
+                             alt="Río y naturaleza de Resconorio">
+                        <figcaption>
+                            <p>Entorno fluvial y biodiversidad local</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="https://source.unsplash.com/random/500x400/?festival,celebration"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/500x400/6B7280/FFFFFF?text=Fiestas+Tradicionales'; this.alt='Fiestas tradicionales de Resconorio';"
+                             alt="Fiestas tradicionales de Resconorio">
+                        <figcaption>
+                            <p>Celebraciones culturales a lo largo del año</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action: Subtle -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Mantente Informado</h2>
+                <p class="cta-text">
+                    Suscríbete a nuestro boletín mensual para recibir directamente en tu
+                    correo electrónico los últimos avisos, eventos y noticias del municipio.
+                </p>
+                <div class="cta-actions">
+                    <a href="#noticias" class="btn-primary">Ver Boletín Actual</a>
+                    <a href="admin.html" class="btn-outline">Acceso a Participación Ciudadana</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer: Minimalist -->
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div class="footer-info">
+                    <h3>Ayuntamiento de Resconorio</h3>
+                    <p>
+                        Plaza Mayor, 1<br>
+                        39810 Resconorio • España<br>
+                        📞 987 654 321<br>
+                        ✉️ info@ayuntamientoresconorio.es
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Menú</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#calendario">Calendario</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="admin.html">Administración</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ayuntamiento de Resconorio. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuntamiento de Resconorio</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1 class="logo">Ayuntamiento de Resconorio</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#noticias">Bandos y Avisos</a></li>
+                    <li><a href="#calendario">Calendario</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="admin.html">Administración</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Pueblo montañés en el corazón de la naturaleza</h2>
+            <p>Descubre la esencia de Resconorio, donde la tradición se encuentra con el progreso sostenible.</p>
+            <a href="#noticias" class="btn-primary">Últimos Avisos</a>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>1,245 habitantes</h3>
+                    <p>Población registrada</p>
+                </div>
+                <div class="info-card">
+                    <h3>850 m.s.n.m.</h3>
+                    <p>Altitud media</p>
+                </div>
+                <div class="info-card">
+                    <h3>San Juan - 24 junio</h3>
+                    <p>Fiestas Patronales</p>
+                </div>
+                <div class="info-card">
+                    <h3>+50 años</h3>
+                    <p>Historia municipal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="noticias" class="section">
+        <div class="container">
+            <h2 class="section-title">Bandos y Avisos Municipales</h2>
+            <div class="cards-grid">
+                <!-- Ejemplo de aviso -->
+                <article class="card">
+                    <h3>Edición especial del Boletín Municipal</h3>
+                    <p><time datetime="2026-05-19">Publicado el 19 de mayo de 2026</time></p>
+                    <p>Consulte las últimas novedades del pueblo en nuestro boletín mensual, disponible en formato digital y versión impresa en las oficinas municipales.</p>
+                    <a href="#" class="btn-outline">Leer más →</a>
+                </article>
+
+                <!-- More news items can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="calendario" class="section">
+        <div class="container">
+            <h2 class="section-title">Calendario de Eventos</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Fiestas de San Juan</h3>
+                    <p><strong>Fecha:</strong> 23-24 de junio de 2026</p>
+                    <p>Celebramos nuestras tradicionales fiestas con verbenas, comidas populares y actividades para todos los públicos en la plaza municipal.</p>
+                    <a href="#" class="btn-outline">Ver detalles →</a>
+                </article>
+
+                <article class="card">
+                    <h3>Mercado Medieval Artesanal</h3>
+                    <p><strong>Fecha:</strong> 15 de julio de 2026</p>
+                    <p>Recorrido por puestos artesanales, gastronomía local y espectáculos en vivo que recrean el ambiente de tiempos pasados.</p>
+                    <a href="#" class="btn-outline">Ver detalles →</a>
+                </article>
+
+                <article class="card">
+                    <h3>Ruta Senderista por los Valles</h3>
+                    <p><strong>Fecha:</strong> 5 de agosto de 2026</p>
+                    <p>Expedición guiada por los paisajes naturales más emblemáticos de Resconorio, con parada para picnic en el mirador del águila.</p>
+                    <a href="#" class="btn-outline">Ver detalles →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2 class="section-title">Galería de Fotos</h2>
+            <div class="gallery-grid">
+                <!-- Images from Unsplash (temporary - replace with actual photos) -->
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300/?mountain,village"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/6B7280/FFFFFF?text=Paisaje+Monta%C3%B1eso'; this.alt='Paisaje montañoso de Resconorio';"
+                         alt="Paisaje montañoso de Resconorio">
+                    <figcaption>Paisaje típico de Resconorio en primavera</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300/?festival,celebration"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/6B7280/FFFFFF?text=Fiestas+Locales'; this.alt='Fiestas locales';"
+                         alt="Fiestas locales">
+                    <figcaption>Celebraciones tradicionales en la plaza mayor</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300/?heraldry,shield"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/6B7280/FFFFFF?text=Escudo+Del+Pueblo'; this.alt='Escudo de Resconorio';"
+                         alt="Escudo de Resconorio">
+                    <figcaption>Escudo municipal de Resconorio</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300/?river,nature"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/6B7280/FFFFFF?text=R%C3%ADo+y+Naturaleza'; this.alt='Entorno natural';"
+                         alt="Entorno natural">
+                    <figcaption>Ríos y valles que rodean el municipio</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300/?architecture,rustic"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/6B7280/FFFFFF?text=Arquitectura+Tradicional'; this.alt='Arquitectura tradicional';"
+                         alt="Arquitectura tradicional">
+                    <figcaption>Edificios históricos del casco urbano</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://source.unsplash.com/random/400x300/?food,local"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/6B7280/FFFFFF?text=Gastronom%C3%ADa+Local'; this.alt='Gastronomía local';"
+                         alt="Gastronomía local">
+                    <figcaption>Platos típicos de la cocina resconorense</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Ayuntamiento de Resconorio</h3>
+                <p>Pueblo montañés con compromiso sostenible</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 987 654 321</p>
+                <p>✉️ info@ayuntamientoresconorio.es</p>
+                <p>📍 Plaza Mayor, 1</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios de Atención</h3>
+                <p>Lunes-Viernes: 9:00-14:00 y 16:00-20:00</p>
+                <p>Sábados: 10:00-13:00 (Solo trámites urgentes)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ayuntamiento de Resconorio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

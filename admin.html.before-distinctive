@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Ayuntamiento de Resconorio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1 class="logo">Panel de Administración</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">← Volver al sitio web</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+        <div class="container">
+            <h2 class="section-title mb-8">Gestión de Contenido</h2>
+
+            <!-- Add Notice Form -->
+            <section class="mb-8">
+                <h3 class="mb-4">Agregar Nuevo Aviso o Bando</h3>
+                <form id="avisoForm" class="space-y-4">
+                    <div>
+                        <label for="avisoTitulo" class="block mb-2 font-medium text-gray-700">Título del Aviso:</label>
+                        <input type="text" id="avisoTitulo" name="titulo" required
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    <div>
+                        <label for="avisoFecha" class="block mb-2 font-medium text-gray-700">Fecha de Publicación:</label>
+                        <input type="date" id="avisoFecha" name="fecha" required
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    <div>
+                        <label for="avisoContenido" class="block mb-2 font-medium text-gray-700">Contenido:</label>
+                        <textarea id="avisoContenido" name="contenido" required
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all min-h-[150px] resize-y"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full mt-2">Publicar Aviso</button>
+                </form>
+            </section>
+
+            <!-- Add Event Form -->
+            <section class="mb-8">
+                <h3 class="mb-4">Agregar Nuevo Evento al Calendario</h3>
+                <form id="eventoForm" class="space-y-4">
+                    <div>
+                        <label for="eventoTitulo" class="block mb-2 font-medium text-gray-700">Nombre del Evento:</label>
+                        <input type="text" id="eventoTitulo" name="titulo" required
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="eventoFechaInicio" class="block mb-2 font-medium text-gray-700">Fecha de Inicio:</label>
+                            <input type="date" id="eventoFechaInicio" name="fechaInicio" required
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label for="eventoFechaFin" class="block mb-2 font-medium text-gray-700">Fecha de Fin (opcional):</label>
+                            <input type="date" id="eventoFechaFin" name="fechaFin"
+                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="eventoDescripcion" class="block mb-2 font-medium text-gray-700">Descripción:</label>
+                        <textarea id="eventoDescripcion" name="descripcion" required
+                                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all min-h-[150px] resize-y"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full mt-2">Agregar Evento</button>
+                </form>
+            </section>
+
+            <!-- Preview Section -->
+            <section>
+                <h3 class="mb-4">Vista Previa de Contenido Guardado</h3>
+                <div id="preview" class="preview-section space-y-4">
+                    <p id="emptyState" class="text-center text-gray-500 py-8">No hay avisos o eventos guardados aún. ¡Agrega el primero!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Ayuntamiento de Resconorio</h3>
+                <p>Pueblo montañés con compromiso sostenible</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 987 654 321</p>
+                <p>✉️ info@ayuntamientoresconorio.es</p>
+                <p>📍 Plaza Mayor, 1</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios de Atención</h3>
+                <p>Lunes-Viernes: 9:00-14:00 y 16:00-20:00</p>
+                <p>Sábados: 10:00-13:00 (Solo trámites urgentes)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ayuntamiento de Resconorio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Storage keys
+        const AVISOS_KEY = 'resconorio_avisos';
+        const EVENTOS_KEY = 'resconorio_eventos';
+
+        // Load data from localStorage on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAvisos();
+            loadEventos();
+        });
+
+        // Avisos Form Submission
+        document.getElementById('avisoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const titulo = document.getElementById('avisoTitulo').value.trim();
+            const fecha = document.getElementById('avisoFecha').value;
+            const contenido = document.getElementById('avisoContenido').value.trim();
+
+            if (!titulo || !fecha || !contenido) {
+                alert('Por favor, complete todos los campos');
+                return;
+            }
+
+            const avisos = JSON.parse(localStorage.getItem(AVISOS_KEY) || '[]');
+            const nuevoAviso = {
+                id: Date.now(),
+                titulo: titulo,
+                fecha: fecha,
+                contenido: contenido
+            };
+
+            avisos.push(nuevoAviso);
+            localStorage.setItem(AVISOS_KEY, JSON.stringify(avisos));
+
+            // Reset form and update preview
+            this.reset();
+            loadAvisos();
+            showSuccess('Aviso publicado correctamente');
+        });
+
+        // Eventos Form Submission
+        document.getElementById('eventoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const titulo = document.getElementById('eventoTitulo').value.trim();
+            const fechaInicio = document.getElementById('eventoFechaInicio').value;
+            const fechaFin = document.getElementById('eventoFechaFin').value;
+            const descripcion = document.getElementById('eventoDescripcion').value.trim();
+
+            if (!titulo || !fechaInicio || !descripcion) {
+                alert('Por favor, complete los campos obligatorios');
+                return;
+            }
+
+            const eventos = JSON.parse(localStorage.getItem(EVENTOS_KEY) || '[]');
+            const nuevoEvento = {
+                id: Date.now(),
+                titulo: titulo,
+                fechaInicio: fechaInicio,
+                fechaFin: fechaFin || null,
+                descripcion: descripcion
+            };
+
+            eventos.push(nuevoEvento);
+            localStorage.setItem(EVENTOS_KEY, JSON.stringify(eventos));
+
+            // Reset form and update preview
+            this.reset();
+            loadEventos();
+            showSuccess('Evento agregado correctamente');
+        });
+
+        // Load and display avisos
+        function loadAvisos() {
+            const avisos = JSON.parse(localStorage.getItem(AVISOS_KEY) || '[]');
+            const previewDiv = document.getElementById('preview');
+
+            // Clear existing avisos section (but keep events)
+            const existingAvisos = previewDiv.querySelectorAll('.aviso-section');
+            existingAvisos.forEach(el => el.remove());
+
+            if (avisos.length === 0) {
+                const emptyState = previewDiv.querySelector('#emptyState');
+                if (emptyState) emptyState.style.display = 'block';
+                return;
+            }
+
+            // Hide empty state if there are avisos
+            const emptyState = previewDiv.querySelector('#emptyState');
+            if (emptyState) emptyState.style.display = 'none';
+
+            // Create avisos section if it doesn't exist
+            let avisoSection = previewDiv.querySelector('.aviso-section');
+            if (!avisoSection) {
+                avisoSection = document.createElement('div');
+                avisoSection.className = 'aviso-section';
+                avisoSection.innerHTML = '<h3 class="mb-4">Avisos Municipales</h3>';
+                previewDiv.insertBefore(avisoSection, previewDiv.firstChild);
+            }
+
+            // Add each aviso
+            avisos.forEach(aviso => {
+                const avisoElement = document.createElement('div');
+                avisoElement.className = 'aviso-card p-4 border rounded-lg mb-4';
+                avisoElement.innerHTML = `
+                    <h4 class="font-semibold mb-2">${aviso.titulo}</h4>
+                    <p class="text-sm text-gray-500 mb-2"><em>${new Date(aviso.fecha).toLocaleDateString('es-ES')}</em></p>
+                    <p class="text-gray-700 mb-3">${aviso.contenido}</p>
+                    <button class="btn-outline px-3 py-1 text-sm" onclick="deleteAviso(${aviso.id})">Eliminar</button>
+                `;
+                avisoSection.appendChild(avisoElement);
+            });
+        }
+
+        // Load and display eventos
+        function loadEventos() {
+            const eventos = JSON.parse(localStorage.getItem(EVENTOS_KEY) || '[]');
+            const previewDiv = document.getElementById('preview');
+
+            // Clear existing eventos section (but keep avisos)
+            const existingEventos = previewDiv.querySelectorAll('.evento-section');
+            existingEventos.forEach(el => el.remove());
+
+            if (eventos.length === 0) {
+                // Only show empty state if no avisos either
+                const avisos = JSON.parse(localStorage.getItem(AVISOS_KEY) || '[]');
+                if (avisos.length === 0) {
+                    const emptyState = previewDiv.querySelector('#emptyState');
+                    if (emptyState) emptyState.style.display = 'block';
+                }
+                return;
+            }
+
+            // Hide empty state if there are eventos
+            const emptyState = previewDiv.querySelector('#emptyState');
+            if (emptyState) emptyState.style.display = 'none';
+
+            // Create eventos section
+            let eventoSection = previewDiv.querySelector('.evento-section');
+            if (!eventoSection) {
+                eventoSection = document.createElement('div');
+                eventoSection.className = 'evento-section';
+                eventoSection.innerHTML = '<h3 class="mb-4">Eventos del Calendario</h3>';
+                previewDiv.appendChild(eventoSection);
+            }
+
+            // Add each evento
+            eventos.forEach(evento => {
+                const fechaFinTexto = evento.fechaFin
+                    ? ` al ${new Date(evento.fechaFin).toLocaleDateString('es-ES')}`
+                    : '';
+                const fechaInicioTexto = new Date(evento.fechaInicio).toLocaleDateString('es-ES');
+
+                const eventoElement = document.createElement('div');
+                eventoElement.className = 'evento-card p-4 border rounded-lg mb-4';
+                eventoElement.innerHTML = `
+                    <h4 class="font-semibold mb-2">${evento.titulo}</h4>
+                    <p class="text-sm text-gray-500 mb-2"><strong>Fecha:</strong> ${fechaInicioTexto}${fechaFinTexto}</p>
+                    <p class="text-gray-700 mb-3">${evento.descripcion}</p>
+                    <button class="btn-outline px-3 py-1 text-sm" onclick="deleteEvento(${evento.id})">Eliminar</button>
+                `;
+                eventoSection.appendChild(eventoElement);
+            });
+        }
+
+        // Delete functions
+        window.deleteAviso = function(id) {
+            if (!confirm('¿Está seguro de eliminar este aviso?')) return;
+            const avisos = JSON.parse(localStorage.getItem(AVISOS_KEY) || '[]');
+            const filtered = avisos.filter(aviso => aviso.id !== id);
+            localStorage.setItem(AVISOS_KEY, JSON.stringify(filtered));
+            loadAvisos();
+            showSuccess('Aviso eliminado');
+        };
+
+        window.deleteEvento = function(id) {
+            if (!confirm('¿Está seguro de eliminar este evento?')) return;
+            const eventos = JSON.parse(localStorage.getItem(EVENTOS_KEY) || '[]');
+            const filtered = eventos.filter(evento => evento.id !== id);
+            localStorage.setItem(EVENTOS_KEY, JSON.stringify(filtered));
+            loadEventos();
+            showSuccess('Evento eliminado');
+        };
+
+        // Show success message
+        function showSuccess(message) {
+            // Remove any existing success message
+            const existingMsg = document.querySelector('.success-message');
+            if (existingMsg) existingMsg.remove();
+
+            const successMsg = document.createElement('div');
+            successMsg.className = 'success-message px-4 py-2 mb-4 rounded-lg';
+            successMsg.textContent = message;
+            successMsg.style.backgroundColor = '#10b981'; // success color
+            successMsg.style.color = 'white';
+
+            document.querySelector('.admin-main .container').insertBefore(successMsg, document.querySelector('.admin-main .container').firstChild);
+
+            // Fade in
+            requestAnimationFrame(() => {
+                successMsg.style.opacity = '1';
+            });
+
+            // Remove after 3 seconds
+            setTimeout(() => {
+                successMsg.style.opacity = '0';
+                setTimeout(() => {
+                    if (successMsg.parentNode) {
+                        successMsg.parentNode.removeChild(successMsg);
+                    }
+                }, 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuntamiento de Resconorio</title>
+    <!-- Distinctive Typography: Alpine Contemporary -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Pager+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Container -->
+    <div class="page-container">
+
+        <!-- Header: Alpine Motif -->
+        <header class="site-header">
+            <div class="header-alpine-bg">
+                <div class="peak-shadow"></div>
+                <div class="alpine-glow"></div>
+            </div>
+            <div class="container header-content">
+                <div class="logo-alpine">
+                    <h1>Ayuntamiento</h1>
+                    <h2>de Resconorio</h2>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                        <li><a href="#noticias" class="nav-link">Bandos y Avisos</a></li>
+                        <li><a href="#calendario" class="nav-link">Calendario</a></li>
+                        <li><a href="#galeria" class="nav-link">Galería</a></li>
+                        <li><a href="admin.html" class="nav-link">Administración</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero: Immersive Alpine Experience -->
+        <section class="hero-section">
+            <div class="hero-alpine-layers">
+                <div class="sky-gradient"></div>
+                <div class="distant-peaks"></div>
+                <div class="mid-peaks"></div>
+                <div class="foreground-pines"></div>
+                <div class="alpenglow"></div>
+                <div class="atmospheric-particles"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Resconorio</h1>
+                <p class="hero-subtitle">850 m.s.n.m. • Pueblo de Montaña con Alma Alpina</p>
+                <p class="hero-tagline">Donde la tradición se encuentra con la responsabilidad ambiental</p>
+                <div class="hero-actions">
+                    <a href="#noticias" class="btn-primary">Últimos Avisos Oficiales</a>
+                    <a href="#galeria" class="btn-secondary">Nuestra Galería Visual</a>
+                </div>
+                <div class="hero-meta">
+                    <time datetime="2026-05-20">Actualizado: 20 de mayo, 2026</time>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction: Text & Image Balance -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-alpine-grid">
+                    <div class="intro-text-block">
+                        <h2 class="section-title">Nuestro Compromiso</h2>
+                        <p class="intro-paragraph">
+                            En Resconorio, creemos que el progreso verdadero nace del respeto al entorno
+                    que nos sustenta. Nuestras políticas municipales buscan equilibrar el desarrollo
+                    sostenible con la preservación de nuestra rica herencia cultural montañesa.
+                        </p>
+                        <p class="intro-paragraph">
+                            Desde la gestión responsable de nuestros bosques hasta la promoción
+                    de energías limpias y turismo consciente, trabajamos día a día para construir
+                    un futuro donde nuestras generaciones puedan seguir disfrutando de estos
+                    valles y cumbres que nos han visto crecer.
+                        </p>
+                    </div>
+                    <div class="intro-image-block">
+                        <div class="alpine-frame">
+                            <img src="https://source.unsplash.com/random/900x600/?mountain,valley,town"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/900x600/5D4037/FFFFFF?text=Valle+de+Resconorio'; this.alt='Valle de Resconorio con picos de fondo';"
+                                 alt="Valle de Resconorio con picos de fondo">
+                            <div class="image-gradient-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics: Textured Alpine Elements -->
+        <section class="stats-section">
+            <div class="container">
+                <h2 class="section-title centered">Nuestro Entorno en Cifras</h2>
+                <div class="stats-alpine-grid">
+                    <div class="stat-alpine stone">
+                        <div class="stat-symbol">⛰️</div>
+                        <h3 class="stat-label">Picos Mayores a 2000m</h3>
+                        <p class="stat-number">12</p>
+                        <p class="stat-detail">que vigilan nuestro valle</p>
+                    </div>
+                    <div class="stat-alpine forest">
+                        <div class="stat-symbol">🌲</div>
+                        <h3 class="stat-label">Hectáreas de Bosque Protegido</h3>
+                        <p class="stat-number">3,200</p>
+                        <p class="stat-detail">hogar de biodiversidad única</p>
+                    </div>
+                    <div class="stat-alpine water">
+                        <div class="stat-symbol">💧</div>
+                        <h3 class="stat-label">Kilómetros de Ríos y Arroyos</h3>
+                        <p class="stat-number">45</p>
+                        <p class="stat-detail">agua pura de deshielo glacial</p>
+                    </div>
+                    <div class="stat-alpine culture">
+                        <div class="stat-symbol">🎭</div>
+                        <h3 class="stat-label">Festivales Anuales Tradicionales</h3>
+                        <p class="stat-number">8</p>
+                        <p class="stat-detail">que mantienen viva nuestra identidad</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News: Overlapping Timeline with Alpine Details -->
+        <section id="noticias" class="news-section">
+            <div class="container">
+                <h2 class="section-title">Boletín Informativo Municipal</h2>
+                <div class="news-alpine-timeline">
+                    <div class="timeline-alpine-line"></div>
+
+                    <!-- News Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="news-content">
+                            <div class="news-date">20 MAY</div>
+                            <h3 class="news-title">Nuevo Sistema de Gestión de Residuos Orgánicos</h3>
+                            <p class="news-text">
+                                Implementación de compostaje comunitario en tres zonas del municipio,
+                                transformando residuos de cocina y jardín en abono natural para
+                                huertos municipales y particulares, reduciendo en un 40% el volumen de
+                                residuos enviados a vertederos.
+                            </p>
+                            <a href="#" class="news-link">Descargar manual de participación →</a>
+                        </div>
+                        <div class="timeline-marker alpina"></div>
+                    </div>
+
+                    <!-- News Item 2 -->
+                    <div class="timeline-item right">
+                        <div class="news-content">
+                            <div class="news-date">18 MAY</div>
+                            <h3 class="news-title">Convocatòria: Guardabosques Voluntarios</h3>
+                            <p class="news-text">
+                                Se abre periodo de inscripción para el programa de vigilancia
+                                voluntaria de nuestros espacios naturales, con formación en identificación
+                                de especies, primeros auxilios en entorno de montaña y protocolos de
+                                actuación ante emergencias.
+                            </p>
+                            <a href="#" class="news-link">Formulario de inscripción →</a>
+                        </div>
+                        <div class="timeline-marker alpina"></div>
+                    </div>
+
+                    <!-- News Item 3 -->
+                    <div class="timeline-item left">
+                        <div class="news-content">
+                            <div class="news-date">15 MAY</div>
+                            <h3 class="news-title">Mejora de Senderos: Sector Lacustre</h3>
+                            <p class="news-text">
+                                Finalización de obras en el sendero que rodea el Lago Mirante,
+                                incluyendo pasarelas sostenibles sobre zonas húmedas, miradores
+                                de observación de avifauna y zonas de interpretación ambiental con
+                                paneles informativos en braille y relieve.
+                            </p>
+                            <a href="#" class="news-link">Ver mapa actualizado de senderos →</a>
+                        </div>
+                        <div class="timeline-marker alpina"></div>
+                    </div>
+
+                    <!-- News Item 4 -->
+                    <div class="timeline-item right">
+                        <div class="news-content">
+                            <div class="news-date">10 MAY</div>
+                            <h3 class="news-title">Iniciativa Huertos Escolares Alpinos</h3>
+                            <p class="news-text">
+                                Lanzamiento de proyecto educativo en los tres colegios del municipio
+                                para crear huertos con variedades tradicionales de montaña, enseñando
+                                técnicas de cultivo en altitud y preservación de semillas locales.
+                            </p>
+                            <a href="#" class="news-link">Ver proyecto educativo completo →</a>
+                        </div>
+                        <div class="timeline-marker alpina"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events: Radial Distribution -->
+        <section id="calendario" class="section bg-alpine">
+            <div class="container">
+                <h2 class="section-title">Próximos Eventos Destacados</h2>
+                <div class="events-alpine-wheel">
+                    <div class="event-wheel-item">
+                        <div class="event-alpine-icon">🔥</div>
+                        <div class="event-content">
+                            <h3 class="event-title">Fiestas de San Juan</h3>
+                            <p class="event-date">23-24 Jun</p>
+                            <p class="event-description">
+                                Hogueras tradicionales, música de rondalla y verbenas populares
+                                en la plaza mayor, respetando protocolos de seguridad ambiental.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-wheel-item">
+                        <div class="event-alpine-icon">⚔️</div>
+                        <div class="event-content">
+                            <h3 class="event-title">Feria Medieval de Artesanía</h3>
+                            <p class="event-date">15 Jul</p>
+                            <p class="event-description">
+                                Artesanía tradicional, gastronomía de montaña y demostraciones
+                                de oficios antiguos en el entorno histórico del casco urbano.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-wheel-item">
+                        <div class="event-alpine-icon">🎵</div>
+                        <div class="event-content">
+                            <h3 class="event-title">Festival de Música Alpina</h3>
+                            <p class="event-date">02 Ago</p>
+                            <p class="event-description">
+                                Conciertos de instrumentos tradicionales de montaña en
+                                espacios naturales únicos del municipio.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="event-wheel-item">
+                        <div class="event-alpine-icon">🏔️</div>
+                        <div class="event-content">
+                            <h3 class="event-title">Travesía de Refugios</h3>
+                            <p class="event-date">19-20 Sep</p>
+                            <p class="event-description">
+                                Ruta de dos días por refugios de alta montaña con
+                                pernoctación guiada y avistamiento de faunanec.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery: Alpine Masonry -->
+        <section id="galeria" class="section">
+            <div class="container">
+                <h2 class="section-title">Galería Alpina de Resconorio</h2>
+                <div class="gallery-alpine-masonry">
+                    <!-- Images from Unsplash (temporary - replace with actual photos) -->
+                    <figure class="gallery-item panoramic">
+                        <img src="https://source.unsplash.com/random/1000x500/?mountain,valley"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/1000x500/5D4037/FFFFFF?text=Panorámica+de+Resconorio'; this.alt='Vista panorámica del valle de Resconorio';"
+                             alt="Vista panorámica del valle de Resconorio">
+                        <figcaption>
+                            <h3>Panorámica de Otoño</h3>
+                            <p>Cuando los hayedos se tiñen de dorado y los picos primeras nevadas</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item detail">
+                        <img src="https://source.unsplash.com/random/600x800/?architecture,stone"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/600x800/5D4037/FFFFFF?text=Arquitectura+Piedra'; this.alt='Arquitectura tradicional en piedra';"
+                             alt="Arquitectura tradicional en piedra">
+                        <figcaption>
+                            <h3>Casco Urbano Histórico</h3>
+                            <p>Calles empedradas y fachadas de piedra caliza local</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item tall">
+                        <img src="https://source.unsplash.com/random/500x800/?forest,trees"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/500x800/5D4037/FFFFFF?text=Bosque+de+Hayas'; this.alt='Bosque de hayas de Resconorio';"
+                             alt="Bosque de hayas de Resconorio">
+                        <figcaption>
+                            <h3>Hayedo Centenario</h3>
+                            <p>Uno de los hayedos más antiguos de la región cordillera</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item detail">
+                        <img src="https://source.unsplash.com/random/600x400/?water,river"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/5D4037/FFFFFF?text=R%C3%ADo+de+Montaña'; this.alt='Río de montaña cristalino';"
+                             alt="Río de montaña cristalino">
+                        <figcaption>
+                            <h3>Río Valdavia en Primavera</h3>
+                            <p>Aguas cristalinas nacidas en los glaciares permanentes</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item panoramic">
+                        <img src="https://source.unsplash.com/random/800x600/?sunset,mountains"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/5D4037/FFFFFF?text=Atardecer+en+los+Picos'; this.alt='Atardecer sobre los picos de Resconorio';"
+                             alt="Atardecer sobre los picos de Resconorio">
+                        <figcaption>
+                            <h3>Alpenglow de Invierno</h3>
+                            <p>El fenómeno óptico que tiñe los picos de rosa al atardecer</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="gallery-item detail">
+                        <img src="https://source.unsplash.com/random/400x500/?food,local"
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/400x500/5D4037/FFFFFF?text=Cocina+Monta%C3%B1esa'; this.alt='Platos típicos de la cocina resconorense';"
+                             alt="Platos típicos de la cocina resconorense">
+                        <figcaption>
+                            <h3>Cocina de Montaña</h3>
+                            <p>Cocido legués, trucha a la navarra y queso de cura natural</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action: Alpine Invitation -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-alpine-background">
+                    <div class="cta-peaks"></div>
+                    <div class="cta-alpine-glow"></div>
+                </div>
+                <div class="cta-content">
+                    <h2 class="cta-title">Tu Lugar en Resconorio</h2>
+                    <p class="cta-text">
+                        Ya seas visitante buscando desconexión en la naturaleza, nuevo residuo
+                        atraído por nuestra calidad de vida, o vecino de toda la vida, aquí encuentras
+                        espacio para pertenecer, contribuir y crecer en armonía con nuestro entorno
+                        de montaña.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="#galeria" class="btn-primary">Explorar Nuestro Entorno Natural</a>
+                        <a href="#calendario" class="btn-secondary">Participar en Nuestros Eventos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer: Grounded in Stone -->
+        <footer class="site-footer">
+            <div class="footer-alpine-base">
+                <div class="stone-strata"></div>
+                <div class="alpine-moss"></div>
+            </div>
+            <div class="container footer-content">
+                <div class="footer-alpine-grid">
+                    <div class="footer-info">
+                        <h3 class="footer-title">Ayuntamiento de Resconorio</h3>
+                        <p class="footer-address">
+                            Plaza Mayor, 1<br>
+                            39810 Resconorio • Cantabria<br>
+                            📞 987 654 321<br>
+                            ✉️ info@ayuntamientoresconorio.es
+                        </p>
+                    </div>
+                    <div class="footer-quicklinks">
+                        <h3 class="footer-title">Menú rápido</h3>
+                        <ul class="footer-menu">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="#noticias">Noticias Oficiales</a></li>
+                            <li><a href="#calendario">Calendario de Eventos</a></li>
+                            <li><a href="#galeria">Galería Fotográfica</a></li>
+                            <li><a href="admin.html">Gestión y Participación</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-values">
+                        <h3 class="footer-title">Nuestros Pilares</h3>
+                        <div class="values-alpine">
+                            <div class="value-item">🌱 Sostenibilidad</div>
+                            <div class="value-item">🏘️ Comunidad</div>
+                            <div class="value-item">⛰️ Territorio</div>
+                            <div class="value-item">🎭 Cultura</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-final">
+                    <p class="footer-copyright">
+                        &copy; 2026 Ayuntamiento de Resconorio. Todos los derechos reservados.
+                    </p>
+                    <p class="footer-motto-alpine">
+                        "Donde cada cumbre nos recuerda nuestro potencial"
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
