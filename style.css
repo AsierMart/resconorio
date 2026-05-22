@@ -1341,7 +1341,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, span, div, figcaption, time, button, input, te
   }
 
   .main-nav.open {
-    max-height: 350px; /* Increased to accommodate all menu items */
+    max-height: 500px; /* Increased further to accommodate all menu items */
     transition: max-height 0.4s ease-in;
   }
 
