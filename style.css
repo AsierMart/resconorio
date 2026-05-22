@@ -555,8 +555,8 @@ a:hover {
 
 .header-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: stretch;
   height: 100%;
   width: 100%;
   max-width: var(--max-width);
