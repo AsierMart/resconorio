@@ -557,6 +557,7 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: var(--space-xl);
   height: 100%;
   width: 100%;
   max-width: var(--max-width);
