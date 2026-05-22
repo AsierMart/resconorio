@@ -572,6 +572,10 @@ a:hover {
   gap: var(--space-xxs);
   padding-left: var(--space-lg);
 }
+.logo img {
+  height: 32px;
+  width: auto;
+}
 
 .logo h1 {
   font-size: 1.3rem;
@@ -658,7 +662,7 @@ a:hover {
   align-items: center;
   /* Imagen de fondo - usando ruta correcta */
   background-image:
-    url('/images/R.jpg');
+    url('images/R.jpg');
   background-size: cover;
   background-position: center;
   /* Color de overlay para mejorar legibilidad manteniendo calidez */
