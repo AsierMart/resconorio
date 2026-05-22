@@ -556,7 +556,7 @@ a:hover {
 .header-inner {
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   height: 100%;
   width: 100%;
   max-width: var(--max-width);
@@ -570,9 +570,14 @@ a:hover {
   align-items: center;
   gap: var(--space-sm);
 }
+.logo-link {
+  display: flex;
+  align-items: center;
+}
 .logo-img {
   height: 32px;
   width: auto;
+  display: block;
 }
 .logo-text {
   font-size: 1.3rem;
@@ -624,6 +629,7 @@ a:hover {
 .main-nav {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .main-nav ul {
