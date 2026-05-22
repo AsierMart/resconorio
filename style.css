@@ -683,18 +683,6 @@ a:hover {
   width: 100%;
 }
 
-/* Overlay adicional para mejorar legibilidad si es necesario */
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, transparent 0%, rgba(242, 235, 227, 0.4) 70%);
-  pointer-events: none;
-  z-index: 1;
-}
 
 .hero::before {
   content: '';
